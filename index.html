@@ -86,6 +86,63 @@ footer{border-top:1px solid var(--line);margin-top:20px;padding-top:12px}
 .disc{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:13px;color:var(--slate)}
 .hidden-by-search{display:none!important}
 @media(max-width:560px){.search{max-width:none;flex-basis:100%;margin-left:0}h1{font-size:20px}}
+
+/* ===== VTB SLIDE STYLE — áp toàn app 19/11/2026 ===== */
+:root{--teal:#005993;--teal-d:#0B3C70;--teal-mid:#0B5FA8;--red:#D52558;--kem:#F4F8FC;--ink:#33414F;--line:#C9DBEE;--green:#16A34A;--green-bg:#E7F6EC;--red-bg:#FBE5EA}
+body{font-family:Cambria,Georgia,"Times New Roman",serif}
+h1{font-family:Cambria,Georgia,serif;font-weight:700}
+header.hero{background:linear-gradient(120deg,#0B3C70,#005993 55%,#0B5FA8)}
+.kicker{color:#A9CFF0}
+.hero p{color:#DCE8F5}
+.stat b{font-family:Arial,sans-serif}
+nav.tabs{background:rgba(244,248,252,.97)}
+.sec-title{color:#005993;font-size:20px;position:relative;border-bottom:2px solid #D9D9D9;padding-bottom:6px}
+.sec-title::after{content:'';position:absolute;left:0;bottom:-2px;width:110px;height:3px;background:#005993}
+.sec-msg{color:#595959;font-weight:600}
+.card{border-color:#C9DBEE;border-radius:10px;box-shadow:0 1px 3px rgba(11,60,112,.07)}
+.card h3,.card h4{color:#0B3C70}
+.card ul{list-style:none;padding-left:2px}
+.card li{position:relative;padding-left:15px}
+.card li::before{content:'\25A0';position:absolute;left:0;top:2px;font-size:9px;color:#005993}
+.t-t1{background:#E3F0FA;color:#0B3C70}
+.t-t2{background:#DCE8F5;color:#0B5FA8}
+.t-t3{background:#EDF3FA;color:#5B6770}
+.t-bad{background:#FBE5EA;color:#B01E44}
+.wiz{border-color:#005993;box-shadow:0 8px 22px rgba(11,60,112,.12)}
+.wiz .q{color:#0B3C70}
+.opt.sel{background:#EDF3FA;border-color:#005993}
+.chip{background:#EDF3FA;color:#0B3C70;border-color:#C9DBEE}
+.concl{background:#EDF3FA;border-color:#C9DBEE}
+.concl b{color:#0B3C70}
+.prog{background:#E3F0FA}
+.acc{border-color:#C9DBEE;border-radius:10px;box-shadow:0 1px 3px rgba(11,60,112,.06)}
+.acc-head{color:#0B3C70}
+.acc .chev{color:#0B5FA8}
+.snum{color:#0F8A90;font-family:Arial,sans-serif}
+.cbtn{border-color:#005993;color:#005993}
+.cite{background:#EDF3FA;border-left-color:#005993}
+.pgrp{background:#0B3C70;color:#fff;border-left:5px solid #0F8A90;font-size:16px;padding:8px 12px;border-radius:6px}
+.pno{font-family:Arial,sans-serif;font-weight:700;color:#0B5FA8}
+tr:nth-child(even) td{background:#EDF3FA}
+.qa .q-q{color:#0B3C70}
+.src{border-top-color:#C9DBEE}
+/* ===== Lưu đồ bản đồ bao phủ (Tab 5) ===== */
+.fc-root{background:linear-gradient(120deg,#0B3C70,#0B5FA8);color:#fff;border-radius:10px;padding:10px 12px;text-align:center;font-weight:700;font-size:15px;line-height:1.4}
+.fc-root span{font-weight:400;font-size:12.5px;color:#DCE8F5}
+.fc-arrow{text-align:center;color:#0B5FA8;font-size:15px;line-height:1.25;padding:3px 0}
+.fc-arrow span{font-size:12px;color:#5B6770}
+.fc-band{border:1px solid #C9DBEE;border-radius:10px;padding:10px 12px;background:#fff;margin:0}
+.fc-band-h{font-weight:700;color:#0B3C70;margin-bottom:7px;font-size:14.5px}
+.fc-pill{display:inline-block;font-size:11px;font-weight:700;border-radius:999px;padding:2px 9px;color:#fff;vertical-align:2px;margin-right:6px}
+.fc-ok{border-left:5px solid #16A34A}
+.fc-add{border-left:5px solid #0B5FA8}
+.fc-out{border:1.5px dashed #9FB3C8;background:#F7F9FB}
+.fc-chips{display:flex;flex-wrap:wrap;gap:5px}
+.fc-chip{background:#EDF3FA;border:1px solid #C9DBEE;border-radius:999px;padding:2px 9px;font-size:12.5px;color:#0B3C70}
+.fc-chip.out{background:#fff;color:#5B6770;border-color:#C4CFDA}
+.fc-sub{margin:6px 0;font-size:13.5px;line-height:1.5}
+.fc-sub b{color:#0B3C70}
+
 </style>
 </head>
 <body>
@@ -245,15 +302,21 @@ footer{border-top:1px solid var(--line);margin-top:20px;padding-top:12px}
     <li><b>01/8/2026</b> — Phân cấp cấp C/O theo Thông tư 26/2026/TT-BCT (Cục Xuất nhập khẩu: 12 mẫu; UBND cấp tỉnh: Mẫu 18)</li>
     <li><b>31/12/2026</b> — Hạn cuối kỳ gia hạn đăng ký cơ sở FDA Mỹ 2026 (kỳ gia hạn 01/10–31/12/2026); trễ hạn là đăng ký hết hiệu lực</li>
   </ul></div>
-  <div class="card searchable"><h3>Bản đồ bao phủ luật — tự rà soát 15/11/2026</h3>
-  <ul>
-    <li><b>Đã phủ đủ:</b> thuế GTGT/TNDN/TNCN · hóa đơn · sàn khấu trừ thay · đăng ký DN/HKD · ATTP sản xuất &amp; tự công bố · truy xuất &amp; lưu mẫu · nhãn hàng hóa · thương mại điện tử &amp; thông báo web · bảo vệ dữ liệu cá nhân · hải quan, C/O, kiểm dịch · thị trường đích SG/Mỹ/EU · thủ tục theo bước (Tab 6)</li>
-    <li><b>Bổ sung ở lượt quét 3 (15/11):</b> CTV &amp; đại lý 4 mô hình + ranh giới đa cấp (Tab 7) · xuất khẩu mua hàng của bên khác + gia công nhãn riêng (case C4–C6) · Luật Bảo vệ quyền lợi người tiêu dùng · Luật Quảng cáo sửa đổi 2025 (KOL/livestream) · đo lường hàng đóng gói sẵn &amp; dấu “V” · bao bì tiếp xúc thực phẩm QCVN 12-1 · điều kiện bảo quản/vận chuyển (Luật ATTP Đ.19–22, nằm trong nội dung Tab 3/5) · môi trường xưởng nhỏ · thanh toán qua trung gian có phép (chỉ ký với tổ chức được NHNN cấp phép — NĐ 52/2024) · đăng ký nhãn hiệu · lưu mẫu hàng: luật không bắt lưu mẫu vật lý theo lô — bắt lưu THÔNG TIN truy xuất 12 tháng sau ngày hết hạn của lô (TT 17/2021); mẫu lưu đối chứng là thực hành tự nguyện (Tab 4, Tab 6)</li>
-    <li><b>Bổ sung gia công &amp; kết hợp xuất khẩu (15/11):</b> nhận gia công cho thương nhân nước ngoài — chế độ riêng NĐ 69/2018 + TT 38/2015 (case C7, thủ tục Tab 6) · thuế/hóa đơn của đặt gia công trong nước (bổ sung case C6) · bảng so sánh 4 cách kết hợp ở cuối Tab 1 · trách nhiệm thu hồi của chủ thương hiệu không có xưởng (TT 17/2021, Tab 4)</li>
-    <li><b>Bổ sung từ ảnh chụp người dùng gửi (17/11) — đối chiếu Cẩm nang hỏi–đáp của Cục Thuế:</b> khung hóa đơn ĐÃ ĐỔI — Nghị định 254/2026 + TT 91/2026 thay toàn bộ NĐ 123/2020, NĐ 70/2025, TT 32/2025 từ 01/7/2026, app đã ánh xạ lại mọi dẫn chiếu · hóa đơn khi đổi/trả hàng + Mẫu 04/SS-HĐĐT (Tab 4) · mốc doanh thu 3 tỷ của hộ kinh doanh (wizard + Tab 4) · chứng từ đầu vào của hộ theo TT 152/2025 (Tab 4) · báo cáo lao động &amp; BHXH bắt buộc của chủ hộ (Tab 4, Tab 6)</li>
-    <li><b>Tổ chức lại Tab 6 (19/11):</b> 27 thủ tục xếp thành 6 nhóm theo thứ tự quy trình (thành lập → thuế &amp; hóa đơn → sản xuất &amp; sản phẩm → bán trong nước &amp; online → xuất khẩu → lao động &amp; BHXH); gắn link biểu mẫu/cổng điền chính thức cho thủ tục có form (nghiên cứu 13); thêm 2 thủ tục thuê gia công trong nước — để bán online và để xuất khẩu</li>
-    <li><b>Chủ động để ngoài phạm vi app:</b> an toàn lao động trong xưởng · phòng cháy chữa cháy · giá/kê khai giá · tranh chấp &amp; tố tụng · thuế của nhà đầu tư nước ngoài — khi phát sinh việc cụ thể sẽ tra riêng</li>
-  </ul></div>
+  <div class="card searchable"><h3>Bản đồ bao phủ luật — vẽ dạng lưu đồ</h3>
+  <div class="fc-root">HOẠT ĐỘNG SẢN XUẤT – KINH DOANH HẠT ĐIỀU<br><span>Bản đồ bao phủ luật · tự rà soát 15/11/2026 · cập nhật 19/11/2026</span></div>
+  <div class="fc-arrow">▼</div>
+  <div class="fc-band fc-ok"><div class="fc-band-h"><span class="fc-pill" style="background:#16A34A">ĐÃ PHỦ</span>Nền tảng — từ lượt quét đầu</div>
+  <div class="fc-chips"><span class="fc-chip">Thuế GTGT · TNDN · TNCN/HKD</span><span class="fc-chip">Hóa đơn điện tử</span><span class="fc-chip">Sàn khấu trừ thay</span><span class="fc-chip">Đăng ký DN / HKD</span><span class="fc-chip">ATTP &amp; tự công bố</span><span class="fc-chip">Truy xuất &amp; lưu mẫu</span><span class="fc-chip">Nhãn hàng hóa</span><span class="fc-chip">TMĐT &amp; thông báo web</span><span class="fc-chip">Bảo vệ dữ liệu cá nhân</span><span class="fc-chip">Hải quan · C/O · Kiểm dịch</span><span class="fc-chip">Thị trường đích SG · Mỹ · EU</span><span class="fc-chip">Thủ tục theo bước — Tab 6</span></div></div>
+  <div class="fc-arrow">▼ <span>rà soát bổ sung qua các lượt</span></div>
+  <div class="fc-band fc-add"><div class="fc-band-h"><span class="fc-pill" style="background:#0B5FA8">BỔ SUNG</span>Các lượt rà soát 15–19/11/2026</div>
+  <p class="fc-sub"><b>Lượt 3 (15/11):</b> CTV &amp; đại lý + ranh giới đa cấp (Tab 7) · xuất khẩu mua hàng của bên khác + gia công nhãn riêng (case C4–C6) · Luật Bảo vệ quyền lợi người tiêu dùng · Luật Quảng cáo sửa đổi 2025 (KOL/livestream) · đo lường hàng đóng gói sẵn &amp; dấu “V” · bao bì tiếp xúc thực phẩm QCVN 12-1 · điều kiện bảo quản/vận chuyển (Luật ATTP Đ.19–22) · môi trường xưởng nhỏ · thanh toán qua trung gian có phép (NĐ 52/2024) · đăng ký nhãn hiệu · lưu mẫu: luật bắt lưu THÔNG TIN truy xuất 12 tháng sau ngày hết hạn của lô (TT 17/2021), mẫu vật lý là thực hành tự nguyện</p>
+  <p class="fc-sub"><b>Gia công &amp; kết hợp xuất khẩu (15/11):</b> nhận gia công cho thương nhân nước ngoài — chế độ riêng NĐ 69/2018 + TT 38/2015 (case C7, Tab 6) · thuế/hóa đơn của đặt gia công trong nước (case C6) · bảng so sánh 4 cách kết hợp ở cuối Tab 1 · trách nhiệm thu hồi của chủ thương hiệu không có xưởng (TT 17/2021, Tab 4)</p>
+  <p class="fc-sub"><b>Lượt 6 (17/11) — từ Cẩm nang hỏi–đáp của Cục Thuế:</b> khung hóa đơn ĐÃ ĐỔI — Nghị định 254/2026 + TT 91/2026 thay toàn bộ khung cũ từ 01/7/2026, app đã ánh xạ lại mọi dẫn chiếu · hóa đơn khi đổi/trả hàng + Mẫu 04/SS-HĐĐT · mốc doanh thu 3 tỷ của hộ kinh doanh · chứng từ đầu vào của hộ theo TT 152/2025 · báo cáo lao động &amp; BHXH bắt buộc của chủ hộ</p>
+  <p class="fc-sub"><b>Tổ chức lại (19/11):</b> Tab 6 xếp 27 thủ tục thành 6 nhóm theo thứ tự quy trình · gắn link biểu mẫu/cổng điền chính thức · thêm 2 thủ tục thuê gia công trong nước — bán online và xuất khẩu</p></div>
+  <div class="fc-arrow">▼</div>
+  <div class="fc-band fc-out"><div class="fc-band-h"><span class="fc-pill" style="background:#5B6770">NGOÀI PHẠM VI</span>Chủ động chưa phủ — tra riêng khi phát sinh việc cụ thể</div>
+  <div class="fc-chips"><span class="fc-chip out">An toàn lao động trong xưởng</span><span class="fc-chip out">Phòng cháy chữa cháy</span><span class="fc-chip out">Giá / kê khai giá</span><span class="fc-chip out">Tranh chấp &amp; tố tụng</span><span class="fc-chip out">Thuế của nhà đầu tư nước ngoài</span></div></div>
+  </div>
   <div class="card searchable"><h3>Danh sách điểm CHƯA XÁC MINH — không dùng làm căn cứ chốt</h3>
   <ul><li>Phân loại thuế của <b>hạt điều rang muối</b> (chỉ rang + muối) và rang khô không muối: vẫn chưa có giải đáp riêng cho hạt điều (đã tìm trên cổng Chính phủ, cơ quan thuế — lượt 2); bằng chứng lân cận: giải đáp của Thuế TP. Hải Phòng kết luận hạt rang <b>tẩm gia vị</b> không phải sơ chế thông thường. Đường đi: xin Bộ Nông nghiệp và Môi trường xác định theo quy trình sản xuất</li>
     <li><b>Khung hóa đơn mới (NĐ 254/2026/TT 91/2026):</b> điều kiện chi tiết của ủy nhiệm lập hóa đơn trong TT 91/2026; số điều cấp hóa đơn theo từng lần phát sinh trong NĐ 254/2026; số hiệu mẫu Bảng kê mua hàng hóa, dịch vụ của TT 152/2025; điều khoản “bảng kê hàng tồn kho” mà lãnh đạo Cục Thuế nhắc tới (dẫn là khoản 4 Điều 18 “Thông tư 68” — chưa rõ văn bản) — chưa xác minh ở cấp điều khoản/mẫu biểu</li>
@@ -573,7 +636,7 @@ const PFORM={"0": ["Khai đăng ký thuế trực tuyến — Cổng Thuế đi�
 function filterProcs(s){document.querySelectorAll('#procs .acc').forEach(a=>{a.style.display=(s==='ALL'||a.dataset.subj===s||a.dataset.subj==='CAHAI')?'':'none'});document.querySelectorAll('#procs .pgrp').forEach(h=>{const g=h.dataset.grp;h.style.display=[...document.querySelectorAll('#procs .acc[data-grp="'+g+'"]')].some(a=>a.style.display!=='none')?'':'none'});['all','dn','hkd'].forEach(k=>document.getElementById('pf-'+k).classList.remove('on'));document.getElementById('pf-'+(s==='ALL'?'all':s.toLowerCase())).classList.add('on')}
 let pno=0;
 document.getElementById('procs').innerHTML=PGROUPS.map(function(g,gi){return '<div class="pgrp" data-grp="'+gi+'">'+g.t+'</div>'+g.items.map(function(i){const p=PROCS[i];pno++;const fm=(typeof PFORM!=='undefined'&&PFORM[i])?('<p style="margin:4px 0"><b>Biểu mẫu:</b> '+(PFORM[i][1]?('<a href="'+PFORM[i][1]+'" target="_blank" rel="noopener">'+PFORM[i][0]+'</a>'):PFORM[i][0])+'</p>'):'';
- return '<div class="acc searchable" data-subj="'+(PSUBJ[i]||'CAHAI')+'" data-grp="'+gi+'"><button class="acc-head" onclick="this.parentElement.classList.toggle(\'open\')">'+pno+'. '+p[1]+' <span class="tag t-cat">'+p[0]+'</span></button>'+
+ return '<div class="acc searchable" data-subj="'+(PSUBJ[i]||'CAHAI')+'" data-grp="'+gi+'"><button class="acc-head" onclick="this.parentElement.classList.toggle(\'open\')">'+'<span class="pttl"><span class="pno">'+pno+'.</span> '+p[1]+'</span>'+' <span class="tag t-cat">'+p[0]+'</span></button>'+
  '<div class="acc-body"><p style="margin:4px 0"><b>Đối tượng:</b> '+p[2]+'</p>'+
  '<p style="margin:4px 0"><b>Cơ quan / nơi nộp:</b> '+p[3]+'</p>'+
  '<p style="margin:4px 0"><b>Hồ sơ:</b> '+fmtList(p[4])+'</p>'+
