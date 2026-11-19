@@ -126,6 +126,18 @@ nav.tabs{background:rgba(244,248,252,.97)}
 tr:nth-child(even) td{background:#EDF3FA}
 .qa .q-q{color:#0B3C70}
 .src{border-top-color:#C9DBEE}
+/* ===== Chuẩn 5 cơ chế: thẻ nguồn bản tải + digest (19/11/2026) ===== */
+.dtier{margin-top:5px}
+.dtier .tg{display:inline-block;font-size:11.5px;font-weight:700;padding:1px 7px;border-radius:8px}
+.tg1{background:#0B3C70;color:#fff}
+.tg3{background:#EDF3FA;color:#0B3C70;border:1px solid #C9DBEE}
+.tgx{background:#FDECEC;color:#B3261E;border:1px solid #F3C2C0}
+.dgb{font-size:13px;margin-left:2px}
+.vdate{font-size:12px;color:#5B6770;margin-top:2px}
+.dg-strip{border:1.5px solid #0B3C70;border-radius:10px;background:#fff;padding:10px 12px;margin:0 0 12px}
+.dg-strip h3{margin:0 0 6px;font-size:15.5px;color:#0B3C70}
+.dg-strip p{margin:3px 0;font-size:13.5px}
+.dg-strip .dg-foot{font-size:12px;color:#5B6770;border-top:1px solid #E3EAF2;margin-top:7px;padding-top:6px}
 /* ===== Lưu đồ bản đồ bao phủ (Tab 5) ===== */
 .fc-root{background:linear-gradient(120deg,#0B3C70,#0B5FA8);color:#fff;border-radius:10px;padding:10px 12px;text-align:center;font-weight:700;font-size:15px;line-height:1.4}
 .fc-root span{font-weight:400;font-size:12.5px;color:#DCE8F5}
@@ -257,7 +269,12 @@ tr:nth-child(even) td{background:#EDF3FA}
 <!-- ============ TAB 3 ============ -->
 <section class="tab" id="tab-t3">
   <div class="sec-title">3 · Danh mục văn bản pháp lý đang hiệu lực</div>
-  <p class="sec-msg">Mỗi văn bản một dòng. “Tầng” cho biết mức kiểm chứng: Tầng 1 = văn bản gốc/Cơ quan chính thức đã mở đọc · Tầng 2 = giải đáp/giới thiệu chính thức · Tầng 3 = toàn văn đăng lại/phân tích thứ cấp — dùng thận trọng.</p>
+  <p class="sec-msg">Mỗi văn bản một dòng. “Tầng” trong thẻ của từng văn bản cho biết mức kiểm chứng nội dung: Tầng 1 = văn bản gốc/cơ quan chính thức đã mở đọc · Tầng 2 = giải đáp/giới thiệu chính thức · Tầng 3 = toàn văn đăng lại/phân tích thứ cấp — dùng thận trọng. Thẻ “Bản đã tải” là tầng nguồn của bản toàn văn đã lưu trong bộ tài liệu của app (chuẩn 5 cơ chế xây app pháp lý).</p>
+  <div class="dg-strip searchable"><h3>Digest rà soát luật — kỳ 19/11/2026</h3>
+  <p>🔴 <b>2 văn bản đã hết hiệu lực:</b> Nghị định 70/2025 và Thông tư 32/2025 (khung hóa đơn cũ) hết hiệu lực từ 01/7/2026 — app đã chuyển căn cứ sang Nghị định 254/2026 + Thông tư 91/2026 từ 17/11/2026; hai dòng này giữ lại để tra cứu chuyển tiếp, không dùng làm căn cứ hiện hành.</p>
+  <p>🟡 <b>3 điểm nguồn chưa trọn, đang theo dõi:</b> Thông tư 31/2022 (file Công báo đã lưu mới tới Chương 8 — thiếu mã 2008.19.10 ở Chương 20) · Quyết định 1103/QĐ-BCT (chưa có PDF bản ký chính thức) · Pháp lệnh Ngoại hối (bản hợp nhất mới 140/2026 hiệu lực 01/12/2026 — chờ đối chiếu).</p>
+  <p>⚪ <b>Nguồn thứ cấp &amp; điểm chưa xác minh:</b> QCVN 12-1:2011/BYT đang lưu bản nguồn thứ cấp; 5 điểm [CHƯA XÁC MINH] — phân loại thuế hạt điều rang muối, tiền về qua sàn xuyên biên giới, importer SFA cho Shopee Cross-Border, yêu cầu thực phẩm của Lazada, HKD tự đứng tên VNACCS/eCoSys — chi tiết ở mục “Hàng chờ nguồn” tại Tab 5.</p>
+  <p class="dg-foot">Nguồn của digest: bộ toàn văn đã tải ngày 19/11/2026 (53 văn bản theo 7 mảng, kèm mục lục nguồn từng văn bản). Kiểm chứng lại trên Công báo trước khi dùng tư vấn cho khách hàng. Kỳ rà soát tiếp theo: hạn 17/02/2027.</p></div>
   <div id="docs"></div>
 </section>
 
@@ -312,6 +329,7 @@ tr:nth-child(even) td{background:#EDF3FA}
   <p class="fc-sub"><b>Lượt 3 (15/11):</b> CTV &amp; đại lý + ranh giới đa cấp (Tab 7) · xuất khẩu mua hàng của bên khác + gia công nhãn riêng (case C4–C6) · Luật Bảo vệ quyền lợi người tiêu dùng · Luật Quảng cáo sửa đổi 2025 (KOL/livestream) · đo lường hàng đóng gói sẵn &amp; dấu “V” · bao bì tiếp xúc thực phẩm QCVN 12-1 · điều kiện bảo quản/vận chuyển (Luật ATTP Đ.19–22) · môi trường xưởng nhỏ · thanh toán qua trung gian có phép (NĐ 52/2024) · đăng ký nhãn hiệu · lưu mẫu: luật bắt lưu THÔNG TIN truy xuất 12 tháng sau ngày hết hạn của lô (TT 17/2021), mẫu vật lý là thực hành tự nguyện</p>
   <p class="fc-sub"><b>Gia công &amp; kết hợp xuất khẩu (15/11):</b> nhận gia công cho thương nhân nước ngoài — chế độ riêng NĐ 69/2018 + TT 38/2015 (case C7, Tab 6) · thuế/hóa đơn của đặt gia công trong nước (case C6) · bảng so sánh 4 cách kết hợp ở cuối Tab 1 · trách nhiệm thu hồi của chủ thương hiệu không có xưởng (TT 17/2021, Tab 4)</p>
   <p class="fc-sub"><b>Lượt 6 (17/11) — từ Cẩm nang hỏi–đáp của Cục Thuế:</b> khung hóa đơn ĐÃ ĐỔI — Nghị định 254/2026 + TT 91/2026 thay toàn bộ khung cũ từ 01/7/2026, app đã ánh xạ lại mọi dẫn chiếu · hóa đơn khi đổi/trả hàng + Mẫu 04/SS-HĐĐT · mốc doanh thu 3 tỷ của hộ kinh doanh · chứng từ đầu vào của hộ theo TT 152/2025 · báo cáo lao động &amp; BHXH bắt buộc của chủ hộ</p>
+  <p class="fc-sub"><b>Áp chuẩn 5 cơ chế (19/11):</b> gắn thẻ tầng nguồn cho toàn bộ danh mục Tab 3 từ bộ toàn văn đã tải · cổng hạn kiểm chứng 90 ngày (19/11/2026 → 17/02/2027) · digest phân tầng 🔴🟡⚪ ở đầu Tab 3 · hồ sơ hành nghề + mục Hàng chờ nguồn ở Tab 5 này</p>
   <p class="fc-sub"><b>Tổ chức lại (19/11):</b> Tab 6 xếp 27 thủ tục thành 6 nhóm theo thứ tự quy trình · gắn link biểu mẫu/cổng điền chính thức · thêm 2 thủ tục thuê gia công trong nước — bán online và xuất khẩu</p></div>
   <div class="fc-arrow">▼</div>
   <div class="fc-band fc-out"><div class="fc-band-h"><span class="fc-pill" style="background:#5B6770">NGOÀI PHẠM VI</span>Chủ động chưa phủ — tra riêng khi phát sinh việc cụ thể</div>
@@ -333,6 +351,29 @@ tr:nth-child(even) td{background:#EDF3FA}
     <li>Thông tư 111/2013 về khấu trừ TNCN có thể được thay thế khi Luật TNCN 109/2025 hiệu lực 01/7/2026 — cơ chế khấu trừ 10% hoa hồng cần rà lại tại thời điểm đó</li>
     <li>Ngưỡng doanh thu trong điều kiện lập Bảng kê thu mua Mẫu 02/TNDN (TT 20/2026 chỉ dẫn chiếu, không ghi số — con số 100 triệu là của quy định cũ, không dùng)</li>
     <li>Chính sách giảm GTGT 8% có áp cho dịch vụ hoa hồng đại lý/môi giới không — chưa xác minh riêng; ngưỡng công suất phân nhóm dự án môi trường ngành chế biến thực phẩm; bảng lệ phí nhãn hiệu tại văn bản gốc Bộ Tài chính</li></ul></div>
+  <div class="card searchable"><h3>Hồ sơ hành nghề — app này vận hành theo chuẩn nào</h3>
+  <ul>
+    <li><b>Phạm vi:</b> 7 mảng — Thuế · Hộ kinh doanh &amp; đăng ký · ATTP, nhãn, quảng cáo · Thương mại điện tử &amp; dữ liệu · Hải quan &amp; xuất khẩu · Thị trường đích (SG/Mỹ/EU) · Phân phối, người tiêu dùng &amp; lĩnh vực khác</li>
+    <li><b>Đối tượng:</b> doanh nghiệp và hộ kinh doanh sản xuất — kinh doanh hạt điều (sản xuất, bán lẻ trong nước, xuất khẩu; mô hình CTV &amp; đại lý)</li>
+    <li><b>Chuẩn trích dẫn:</b> mọi văn bản trong danh mục mang thẻ nguồn của bản toàn văn đã tải — Tầng 1 (Công báo/bản gốc chính thức), Tầng 3 (đăng lại toàn văn, ghi rõ kênh), nguồn thứ cấp (cần đối chiếu); mục gắn [CHƯA XÁC MINH] tuyệt đối không trích nguyên văn làm căn cứ</li>
+    <li><b>Cổng hạn kiểm chứng:</b> mỗi văn bản có ngày kiểm chứng + hạn rà soát sau 90 ngày — kỳ hiện tại: kiểm chứng 19/11/2026, hạn rà soát <b>17/02/2027</b>; quá hạn thì gắn cờ cho tới khi đối chiếu lại trên Công báo/VBPL</li>
+    <li><b>Watchlist nguồn:</b> Công báo · Bộ Tài chính/Cục Thuế · Bộ Công Thương · Tổng cục Hải quan · CSDL văn bản pháp luật (VBPL)</li>
+    <li><b>Khi luật đổi:</b> không sửa app ngay — lập bảng policy-diff (văn bản mới → điều khoản đổi → vị trí trong app bị chạm → mức gap), người dùng duyệt bảng diff trước rồi mới sửa; digest rà soát phân tầng 🔴🟡⚪ mỗi kỳ (bản hiện tại ở đầu Tab 3)</li>
+    <li><b>Giới hạn:</b> app là công cụ tra cứu hỗ trợ, không thay thế ý kiến tư vấn thuế/pháp lý chính thức cho từng trường hợp cụ thể</li>
+  </ul></div>
+  <div class="card searchable"><h3>Hàng chờ nguồn — khoảng trống nguồn đang theo dõi</h3>
+  <ul>
+    <li>🟡 <b>Thông tư 31/2022/TT-BTC:</b> chờ số Công báo chứa Chương 20 của Phụ lục I (mã HS 2008.19.10) hoặc một bản PDF trọn phụ lục — file đã lưu mới tới Chương 8</li>
+    <li>🟡 <b>Quyết định 1103/QĐ-BCT:</b> chờ PDF bản ký chính thức — hiện lưu bài trên logistics.gov.vn (cổng của Bộ Công Thương) trích nội dung cốt lõi <span class="tag t-warn">nguồn thứ cấp</span></li>
+    <li>⚪ <b>QCVN 12-1:2011/BYT:</b> chờ bản chính thức truy cập được — hiện lưu bản nguồn thứ cấp (đủ bảng giới hạn kỹ thuật) <span class="tag t-warn">nguồn thứ cấp</span></li>
+    <li>🟡 <b>Pháp lệnh Ngoại hối:</b> chờ đối chiếu bản hợp nhất mới 140/2026/VBHN-PL-VPQH (hiệu lực 01/12/2026) rồi cập nhật dẫn chiếu trong app</li>
+    <li><span class="tag t-warn">CHƯA XÁC MINH</span> <b>Phân loại thuế hạt điều rang muối</b> (chỉ rang + muối) — chờ giải đáp/xác định bằng văn bản của cơ quan thuế hoặc Bộ Nông nghiệp và Môi trường</li>
+    <li><span class="tag t-warn">CHƯA XÁC MINH</span> <b>Tiền về qua sàn xuyên biên giới</b> — chờ xác nhận bằng văn bản của ngân hàng phục vụ (chưa có văn bản riêng của Ngân hàng Nhà nước)</li>
+    <li><span class="tag t-warn">CHƯA XÁC MINH</span> <b>Importer chịu trách nhiệm SFA cho đơn Shopee Cross-Border</b> VN→SG ở cấp SKU — chờ văn bản công khai của SFA/Shopee</li>
+    <li><span class="tag t-warn">CHƯA XÁC MINH</span> <b>Yêu cầu ngành thực phẩm của Lazada</b> trên trang chính thức và yêu cầu Shopee 2026 cho thực phẩm/nhà sản xuất — chờ đọc được trang gốc</li>
+    <li><span class="tag t-warn">CHƯA XÁC MINH</span> <b>HKD tự đứng tên đăng ký VNACCS/eCoSys</b> bằng mã số thuế chủ hộ — chờ nguồn chính thức; phương án chắc chắn hiện nay là ủy thác qua thương nhân</li>
+  </ul>
+  <p class="small">Mục này rà cùng kỳ với cổng kiểm chứng: kỳ tới hạn 17/02/2027, hoặc sớm hơn khi có văn bản mới chạm tới một mục trong danh sách.</p></div>
 </section>
 
 <section class="tab" id="tab-t7">
@@ -478,8 +519,63 @@ const DOCS=[
 ["Thông tư 21/2014/TT-BKHCN","Đang áp dụng","Đo lường hàng đóng gói sẵn: lượng danh định, chữ số ghi lượng ≥4mm cho 200–1.000g, lượng thiếu cho phép T (300g → 9g; 500g → 15g), dấu định lượng “V”, tự công bố (nhóm 1)","Đã đọc nguyên văn (lượt 3)"],
 ["QCVN 12-1:2011/BYT","Còn hiệu lực","An toàn bao bì nhựa tiếp xúc trực tiếp thực phẩm; quản lý bằng TỰ CÔNG BỐ theo NĐ 15/2018 (không phải công bố hợp quy) — bên mua hũ lưu bản tự công bố + phiếu kiểm nghiệm của nhà cung cấp hũ","Tầng 3 + TT 27/2026/TT-BYT viện dẫn (lượt 3)"],["Thông tư 17/2021/TT-BNNPTNT","Hiệu lực từ 02/02/2022","Truy xuất nguồn gốc, thu hồi và xử lý thực phẩm không bảo đảm an toàn — Điều 6: lưu THÔNG TIN truy xuất: hàng có hạn dùng tối thiểu 12 tháng kể từ ngày hết hạn của lô; hàng chế biến không bắt buộc ghi hạn dùng 2 năm từ ngày sản xuất. Thu hồi: thông báo trong 24 giờ, báo cáo kết quả sau 3 ngày. Thông tư KHÔNG bắt lưu mẫu vật lý theo lô.","Tầng 1 — đã đọc toàn văn","https://thuvienphapluat.vn/van-ban/The-thao-Y-te/Circular-17-2021-TT-BNNPTNT-origin-tracing-of-unsafe-food-499800.aspx"],["Quyết định 1246/QĐ-BYT","Ngày 31/3/2017","Hướng dẫn kiểm thực ba bước và lưu mẫu thức ăn — CHỈ áp cho cơ sở dịch vụ ăn uống, bữa ăn từ 30 suất trở lên: lưu mẫu thức ăn ít nhất 24 giờ, món đặc ≥100 gam, món lỏng ≥150 ml, bảo quản 2–8°C, có nhãn mẫu và sổ theo dõi lưu/hủy mẫu. KHÔNG áp cho hàng thực phẩm đóng gói.","Tầng 1 — đã đọc toàn văn","https://thuvienphapluat.vn/van-ban/The-thao-Y-te/Quyet-dinh-1246-QD-BYT-2017-huong-dan-kiem-tra-giam-sat-che-do-kiem-thuc-ba-bua-an-luu-mau-thuc-an-345847.aspx"],["Thông tư 18/2019/TT-BYT","Ban hành 2019","Quy định GMP trong sản xuất, kinh doanh thực phẩm bảo vệ sức khỏe — trường hợp duy nhất pháp luật bắt lưu MẪU ĐỐI CHIẾU theo lô (lưu đủ lượng để kiểm nghiệm lại khi cần). Hạt điều thông thường không thuộc diện này.","Tầng 1 — Công báo số 609+610","https://congbao.cdnchinhphu.vn/CongBaoCP/CongBao/2019/8/29348/27462-1-609-610.pdf"],,
 ["Thông tư 20/2026/TT-BTC","Hiệu lực 16/03/2026","Khoản 13 Điều 3: mua hàng của cá nhân không kinh doanh — chứng từ chi tiền (≥05 triệu/ngày/người phải không tiền mặt) + Bảng kê thu mua Mẫu 02/TNDN; thay cơ chế Mẫu 01/TNDN của TT 78/2014","Đã xác minh (lượt 3)"],["Nghị định 145/2020/NĐ-CP","Đang hiệu lực (sửa bởi NĐ 35/2022)","Điều 4: người sử dụng lao động khai trình khi bắt đầu hoạt động và BÁO CÁO TÌNH HÌNH SỬ DỤNG LAO ĐỘNG định kỳ 6 tháng (trước 05/6) và hằng năm (trước 05/12) qua Cổng Dịch vụ công quốc gia đến Sở Nội vụ, Mẫu 01/PLI — áp cho cả hộ kinh doanh có thuê lao động (thực hiện theo Điều 71 Nghị định 129/2025).","Tầng 3 — trích nguyên văn khoản 2 Điều 4","https://thuvienphapluat.vn/phap-luat/ho-kinh-doanh-duoi-1-ty-co-can-nop-bao-cao-su-dung-lao-dong-khong-hieu-ro-quy-dinh-nhu-the-nao-250500-272479.html"],["Luật BHXH 2024 + Nghị định 158/2025/NĐ-CP","Hiệu lực 01/7/2025","Chủ hộ kinh doanh có đăng ký thuộc diện BHXH BẮT BUỘC (điểm m khoản 1 Điều 2 Luật BHXH 2024): nhóm nộp thuế theo phương pháp kê khai từ 01/7/2025, toàn bộ chủ hộ có đăng ký từ 01/7/2029 (khoản 2 Điều 3 NĐ 158/2025). Mức đóng 29,5% (25% BHXH + 4,5% BHYT) trên mức lương tự chọn, thấp nhất bằng mức tham chiếu (2.530.000đ/tháng từ 01/7/2026).","Tầng 3 — trích nguyên văn điểm m Điều 2 và Điều 3 NĐ 158/2025","https://congdichvubhxh.vn/chu-ho-kinh-doanh-dong-bhxh-bat-buoc-2026/"]]]];
+
+const DTIER={
+'Luật Thuế GTGT 48/2024/QH15':['<span class="tg tg1">Bản đã tải: Tầng 1 — Công báo – bản ký số</span>',''],
+'Nghị định 181/2025/NĐ-CP':['<span class="tg tg3">Bản đã tải: Tầng 3 — đăng lại toàn văn (LuatVietnam)</span>',''],
+'Nghị định 174/2025/NĐ-CP':['<span class="tg tg1">Bản đã tải: Tầng 1 — Công báo – bản ký số</span>',''],
+'Nghị định 70/2025/NĐ-CP (sửa NĐ 123/2020)':['<span class="tg tg3">Bản đã tải: Tầng 3 — bản ký số đăng lại, host thứ cấp</span>','🔴|Đã hết hiệu lực từ 01/7/2026 — thay bởi Nghị định 254/2026'],
+'Nghị định 117/2025/NĐ-CP':['<span class="tg tg3">Bản đã tải: Tầng 3 — đăng lại toàn văn (Apolat Legal)</span>',''],
+'Luật Thuế TNDN 67/2025/QH15':['<span class="tg tg1">Bản đã tải: Tầng 1 — Công báo – bản ký số</span>',''],
+'Nghị định 141/2026/NĐ-CP':['<span class="tg tg3">Bản đã tải: Tầng 3 — bản Công báo đăng lại, host thứ cấp</span>',''],
+'Nghị định 359/2025/NĐ-CP':['<span class="tg tg1">Bản đã tải: Tầng 1 — Công báo – bản ký số</span>',''],
+'Thông tư 89/2026/TT-BTC':['<span class="tg tg3">Bản đã tải: Tầng 3 — bản điện tử đăng lại, host thứ cấp</span>',''],
+'Thông tư 32/2025/TT-BTC':['<span class="tg tg1">Bản đã tải: Tầng 1 — Công báo – bản ký số</span>','🔴|Đã hết hiệu lực từ 01/7/2026 — thay bởi Thông tư 91/2026'],
+'Nghị định 254/2026/NĐ-CP':['<span class="tg tg3">Bản đã tải: Tầng 3 — đăng lại toàn văn (LuatVietnam)</span>',''],
+'Thông tư 91/2026/TT-BTC':['<span class="tg tg3">Bản đã tải: Tầng 3 — đăng lại toàn văn (CSDL VBPL)</span>',''],
+'Nghị quyết 198/2025/QH15':['<span class="tg tg1">Bản đã tải: Tầng 1 — Công báo – bản ký số</span>',''],
+'Nghị định 68/2026/NĐ-CP':['<span class="tg tg1">Bản đã tải: Tầng 1 — Công báo – bản ký số</span>',''],
+'Thông tư 40/2021/TT-BTC':['<span class="tg tg1">Bản đã tải: Tầng 1 — Công báo – bản ký số</span>',''],
+'Nghị định 168/2025/NĐ-CP':['<span class="tg tg1">Bản đã tải: Tầng 1 — Công báo – bản ký số</span>',''],
+'Thông tư 152/2025/TT-BTC':['<span class="tg tg1">Bản đã tải: Tầng 1 — Công báo – bản ký số</span>',''],
+'Nghị định 15/2018/NĐ-CP':['<span class="tg tg3">Bản đã tải: Tầng 3 — đăng lại toàn văn (CSDL VBPL)</span>',''],
+'Luật ATTP 55/2010/QH12':['<span class="tg tg3">Bản đã tải: Tầng 3 — đăng lại toàn văn (CSDL VBPL)</span>',''],
+'Nghị định 37/2026/NĐ-CP (nhãn hàng hóa)':['<span class="tg tg3">Bản đã tải: Tầng 3 — đăng lại toàn văn (LuatVietnam)</span>',''],
+'Luật TMĐT 122/2025/QH15':['<span class="tg tg3">Bản đã tải: Tầng 3 — đăng lại toàn văn (LuatVietnam)</span>',''],
+'Nghị định 248/2026/NĐ-CP':['<span class="tg tg1">Bản đã tải: Tầng 1 — bản gốc (kho VBPL)</span>',''],
+'Luật Bảo vệ DLCN 91/2025/QH15 + NĐ 356/2025':['<span class="tg tg3">Bản đã tải: Tầng 3 — đăng lại toàn văn (LuatVietnam, cả 2 văn bản)</span>',''],
+'Thông tư 31/2022/TT-BTC':['<span class="tg tg1">Bản đã tải: Tầng 1 — Công báo – bản ký số</span>','🟡|File Công báo đã lưu mới tới Chương 8 của Phụ lục I — mã 2008.19.10 (Chương 20) chưa có trong file'],
+'Nghị định 26/2023/NĐ-CP':['<span class="tg tg1">Bản đã tải: Tầng 1 — Công báo – bản ký số (kèm bản hợp nhất 07/VBHN-BTC)</span>',''],
+'Nghị định 69/2018/NĐ-CP':['<span class="tg tg1">Bản đã tải: Tầng 1 — Công báo – bản ký số</span>',''],
+'Quyết định 1103/QĐ-BCT (2025)':['<span class="tg tgx">Bản đã tải: nguồn thứ cấp – cần đối chiếu (bài trên logistics.gov.vn, cổng của Bộ Công Thương)</span>','🟡|Chưa có PDF bản ký chính thức ở nguồn công khai'],
+'Pháp lệnh Ngoại hối 2005 (sửa đổi 2013)':['<span class="tg tg3">Bản đã tải: Tầng 3 — bản hợp nhất đăng lại toàn văn</span>','🟡|Đã có bản hợp nhất mới 140/2026 hiệu lực 01/12/2026 — chờ đối chiếu'],
+'Thông tư 14/2024/TT-BNNPTNT':['<span class="tg tg1">Bản đã tải: Tầng 1 — Công báo – bản ký số</span>',''],
+'Thông tư 44/2018/TT-BNNPTNT':['<span class="tg tg1">Bản đã tải: Tầng 1 — Công báo – bản ký số</span>',''],
+'Thông tư 14/2026/TT-BCT':['<span class="tg tg1">Bản đã tải: Tầng 1 — Công báo – bản ký số</span>',''],
+'Thông tư 26/2026/TT-BCT':['<span class="tg tg3">Bản đã tải: Tầng 3 — đăng lại toàn văn (LuatVietnam)</span>',''],
+'Quyết định 36/2025/QĐ-TTg (VSIC 2025)':['<span class="tg tg3">Bản đã tải: Tầng 3 — bản toàn văn đăng lại, host thứ cấp</span>',''],
+'SFA Singapore — Import Processed Food':['<span class="tg tg1">Bản đã tải: Tầng 1 — trang chính thức SFA</span>',''],
+'FDA Hoa Kỳ — Importing Human Foods + CPG 570.375':['<span class="tg tg1">Bản đã tải: Tầng 1 — PDF chính thức FDA (CPG 570.375)</span>',''],
+'Regulation (EU) 2023/915':['<span class="tg tg1">Bản đã tải: Tầng 1 — PDF chính thức EUR-Lex</span>',''],
+'Luật Thương mại 2005':['<span class="tg tg3">Bản đã tải: Tầng 3 — bản toàn văn đăng lại, host thứ cấp</span>',''],
+'Thông tư 111/2013/TT-BTC':['<span class="tg tg3">Bản đã tải: Tầng 3 — đăng lại toàn văn (LuatVietnam)</span>',''],
+'Nghị định 40/2018/NĐ-CP (sửa bởi NĐ 18/2023)':['<span class="tg tg3">Bản đã tải: Tầng 3 — bản quét toàn văn, host thứ cấp</span>',''],
+'Nghị định 39/2007/NĐ-CP':['<span class="tg tg3">Bản đã tải: Tầng 3 — đăng lại toàn văn (ACC Group)</span>',''],
+'Nghị định 122/2021/NĐ-CP':['<span class="tg tg1">Bản đã tải: Tầng 1 — Công báo – bản ký số</span>',''],
+'Luật Bảo vệ quyền lợi người tiêu dùng 19/2023/QH15':['<span class="tg tg1">Bản đã tải: Tầng 1 — Công báo – bản hợp nhất ký số</span>',''],
+'Luật 75/2025/QH15 sửa đổi Luật Quảng cáo':['<span class="tg tg3">Bản đã tải: Tầng 3 — đăng lại toàn văn (LuatVietnam)</span>',''],
+'Thông tư 21/2014/TT-BKHCN':['<span class="tg tg3">Bản đã tải: Tầng 3 — đăng lại toàn văn (CSDL VBPL)</span>',''],
+'QCVN 12-1:2011/BYT':['<span class="tg tgx">Bản đã tải: nguồn thứ cấp – cần đối chiếu</span>','⚪|Chưa truy cập được bản chính thức — bản lưu là nguồn thứ cấp, có đủ bảng giới hạn kỹ thuật'],
+'Thông tư 17/2021/TT-BNNPTNT':['<span class="tg tg3">Bản đã tải: Tầng 3 — bản toàn văn đăng lại, host thứ cấp</span>',''],
+'Quyết định 1246/QĐ-BYT':['<span class="tg tg3">Bản đã tải: Tầng 3 — đăng lại toàn văn (LuatVietnam)</span>',''],
+'Thông tư 18/2019/TT-BYT':['<span class="tg tg1">Bản đã tải: Tầng 1 — Công báo – bản ký số</span>',''],
+'Thông tư 20/2026/TT-BTC':['<span class="tg tg3">Bản đã tải: Tầng 3 — bản toàn văn đăng lại, host thứ cấp</span>',''],
+'Nghị định 145/2020/NĐ-CP':['<span class="tg tg3">Bản đã tải: Tầng 3 — bản toàn văn đăng lại, host thứ cấp</span>',''],
+'Luật BHXH 2024 + Nghị định 158/2025/NĐ-CP':['<span class="tg tg3">Bản đã tải: Luật BHXH — Tầng 3 (host thứ cấp) · NĐ 158/2025 — Tầng 1, Công báo – bản ký số</span>','']
+};
 document.getElementById('docs').innerHTML=DOCS.map(g=>'<h3 style="font-size:15.5px;color:var(--teal-d);margin:14px 0 7px">'+g[0]+'</h3>'+g[1].map(d=>
  '<div class="card searchable doc"><div><b>'+d[0]+'</b> <span class="tag t-t1">'+d[3].split(' — ')[0]+'</span></div>'+
+ '<div class="dtier">'+(DTIER[d[0]]?DTIER[d[0]][0]+(DTIER[d[0]][1]?' <span class="dgb" title="'+DTIER[d[0]][1].split('|')[1]+'">'+DTIER[d[0]][1].split('|')[0]+'</span>':''):'')+'</div>'+(DTIER[d[0]]?'<div class="vdate">Kiểm chứng: 19/11/2026 · Hạn rà soát: 17/02/2027</div>':'')+
  '<div class="small">'+d[1]+'</div><div>'+d[2]+'</div>'+
  '<div class="src">Nguồn: '+d[3]+'<br><a href="'+d[4]+'" target="_blank" rel="noopener">'+d[4]+'</a></div></div>').join('')).join('');
 
